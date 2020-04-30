@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DistriCascos</title>
+			<meta name="Descripcion pagina" content="Pagina de catalogo distribucion, cascos y accesorios para motos">
+			<meta charset="utf-8">
+			<meta name="viewport" content="DistriCascos">
+			<meta name="keywords" content="Venta Cascos">
+			<style type="text/css"></style>
+
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+			<link rel="stylesheet" href="bootstrap.min.css">
+<!--******************BoostStrap******************--> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	</head>
+<h1>Gracias</h1>
+<div id="user"></div>
+</html>
+
+
+let inscritos = ['freddy', 'yudy', 'yeny', 'juan', 'diana']
+let asistentes = ['yeny', 'diana', 'juan']
+const user = document.getElementById('user')
+let numeroInscrito = 0
+for (let i = 0; i < inscritos.length; i++){
+    let inscritos = inscritos[i]
+    
+if (asistentes.includes(inscritos)){
+    numeroInscrito++
+    user.innerHTML += '<p>Gracias por asistir ${numeroInscrito}, eres el número ${i}</p>'
+
+    }
+}
